@@ -18,4 +18,5 @@ testpaths = ["tests"]
 addopts = "--cov=scripts --cov-report=term-missing --cov-fail-under=90"
 
 [tool.coverage.run]
-omit = ["scripts/__init__.py"]
+# make_captions.py needs ffmpeg and a speech model: its pure functions are unit-tested, the rest is run by hand.
+omit = ["scripts/__init__.py", "scripts/make_captions.py"]
