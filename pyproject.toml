@@ -1,0 +1,21 @@
+[project]
+name = "hotel-ai-discovery"
+version = "1.0.0"
+description = "Stage 0 of a simulated hotel-group AI engagement: discovery, problem selection, SOW, pricing, security answers"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+authors = [{ name = "Vamsi Alla" }]
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--cov=scripts --cov-report=term-missing --cov-fail-under=90"
+
+[tool.coverage.run]
+omit = ["scripts/__init__.py"]
