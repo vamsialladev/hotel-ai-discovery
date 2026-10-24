@@ -130,6 +130,8 @@ range in [PRICING.md](docs/PRICING.md).
 | 3 | [eval-harness](https://github.com/vamsialladev/eval-harness) | Eval harness and CI gates for stages 1–2 |
 | 4 | [hotel-ops-assistant v1.6.0](https://github.com/vamsialladev/hotel-ops-assistant/releases) and [guest-request-agent v1.1.0](https://github.com/vamsialladev/guest-request-agent/releases) | Production: eval-found fixes, redacted logs, staff role, kill switch |
 | 5 | [hotel-ai-handoff](https://github.com/vamsialladev/hotel-ai-handoff) | Client handoff: runbooks, SLOs, guides |
+| 7 | [hotel-tools-mcp](https://github.com/vamsialladev/hotel-tools-mcp) | The group's tools for any MCP client, with roles, tenant isolation and an audit log |
+| 8 | [hotel-ops-analytics-agent](https://github.com/vamsialladev/hotel-ops-analytics-agent) | Plain-English questions over the bookings database (SQL always shown) and a daily anomaly check |
 
 ## Run locally
 
