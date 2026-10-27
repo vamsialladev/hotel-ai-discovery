@@ -4,6 +4,7 @@
 ![Python](https://img.shields.io/badge/python-3.12-blue)
 [![Ruff](https://img.shields.io/badge/lint-ruff-261230)](https://docs.astral.sh/ruff/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+![coverage gate 90%](https://img.shields.io/badge/coverage%20gate-%E2%89%A590%25-brightgreen)
 
 **Stage 0 of a hotel-group AI engagement: the discovery, problem selection, scope, pricing and security answers
 that came before any code.**
@@ -158,6 +159,12 @@ range in [PRICING.md](docs/PRICING.md).
 | 7 | [hotel-tools-mcp](https://github.com/vamsialladev/hotel-tools-mcp) | The group's tools for any MCP client, with roles, tenant isolation and an audit log |
 | 8 | [hotel-ops-analytics-agent](https://github.com/vamsialladev/hotel-ops-analytics-agent) | Plain-English questions over the bookings database (SQL always shown) and a daily anomaly check |
 
+## Security & guardrails
+
+See [SECURITY.md](SECURITY.md) (threat model and OWASP LLM Top 10 mapping for the proposed system).
+
+**Red team:** this repo has no app or model; [docs/RED_TEAM.md](docs/RED_TEAM.md) says where each app's red-team results live.
+
 ## Run locally
 
 Windows (PowerShell):
@@ -230,10 +237,6 @@ other stages and is empty.
 
 `python -m pytest` runs the unit tests for both scripts with a 90% coverage gate. CI also runs ruff (lint +
 format), pip-audit, gitleaks, markdownlint and a lychee link check.
-
-## Security
-
-See [SECURITY.md](SECURITY.md) (threat model and OWASP LLM Top 10 mapping for the proposed system).
 
 ## Author
 
