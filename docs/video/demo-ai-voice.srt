@@ -1,0 +1,91 @@
+1
+00:00:03,000 --> 00:00:05,475
+Before I wrote any code for this hotel group,
+
+2
+00:00:06,325 --> 00:00:08,458
+I spent a day just asking questions.
+
+3
+00:00:09,308 --> 00:00:11,377
+This repo is what came out of that.
+
+4
+00:00:12,227 --> 00:00:15,150
+It's a simulated client, with synthetic data.
+
+5
+00:00:15,766 --> 00:00:17,259
+I talked to six people.
+
+6
+00:00:18,109 --> 00:00:22,973
+The general manager, the front-desk lead, activities, revenue, IT, and
+a guest.
+
+7
+00:00:23,823 --> 00:00:29,562
+The front-desk lead told me a guest waited four minutes while they
+radioed a manager about one fee.
+
+8
+00:00:30,412 --> 00:00:32,524
+That one answer shaped the first stage.
+
+9
+00:00:33,141 --> 00:00:34,634
+I scored six ideas,
+
+10
+00:00:35,484 --> 00:00:37,191
+then ran a four-check test.
+
+11
+00:00:38,041 --> 00:00:44,142
+Has someone felt it, would someone pay, can I build a first version in
+a week, and do I know the first user.
+
+12
+00:00:44,992 --> 00:00:46,592
+Automatic refunds failed.
+
+13
+00:00:47,442 --> 00:00:50,877
+The manager said that's exactly what would make them switch it off.
+
+14
+00:00:51,485 --> 00:00:52,680
+Here's the pricing.
+
+15
+00:00:53,530 --> 00:00:56,111
+The only measured input is the model cost:
+
+16
+00:00:56,961 --> 00:01:02,230
+eighteen cents per thousand questions, and about a dollar twenty-four
+per thousand emails.
+
+17
+00:01:03,080 --> 00:01:04,915
+Everything else is an assumption,
+
+18
+00:01:05,765 --> 00:01:07,600
+so it's a range, not a promise.
+
+19
+00:01:08,203 --> 00:01:09,675
+The point is the order.
+
+20
+00:01:10,525 --> 00:01:12,104
+Staff-facing before guests,
+
+21
+00:01:12,954 --> 00:01:15,172
+read-only before anything that writes.
+
+22
+00:01:16,022 --> 00:01:19,734
+Every later stage links back here, and the links are in the README.

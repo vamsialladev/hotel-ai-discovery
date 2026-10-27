@@ -13,6 +13,11 @@ that came before any code.**
 > order rather than predicting it.
 
 <!-- DEMO-VIDEO -->
+<!-- AI-NARRATED-DEMO:START -->
+<a href="https://vamsialla.com/projects/hotel-ai-discovery.html#demo"><img src="docs/video/demo-ai-voice.jpg" alt="Demo video, AI-narrated: a scroll through the discovery interviews, the 4-check problem selection, pricing and the engagement order" width="720"></a>
+
+**Demo video (1:20, AI-narrated):** [watch it with sound on vamsialla.com](https://vamsialla.com/projects/hotel-ai-discovery.html#demo) (GitHub can't play MP4 files from a repo) · [download the MP4](docs/video/demo-ai-voice.mp4) · captions burned in ([text](docs/video/demo-ai-voice.srt)). The narrator is an AI voice (Kokoro); my own-voice version will replace it.
+<!-- AI-NARRATED-DEMO:END -->
 
 **Try it live:** there's no app for this stage. Start with the document map below, or run the pricing script.
 
@@ -77,6 +82,8 @@ flowchart LR
     Staff --> KA[Stage 1 Knowledge Assistant]
     Staff --> GA[Stage 2 Guest Request Agent]
     Managers --> OA[Stage 8 Ops Analytics]
+    Guests --> CC[Stage 6 Activities Concierge<br/>requests staff approve]
+    CC --> IDX
     GA --> T[Stage 7 tool server: roles + audit]
     KA --> IDX[(Policy index per property)]
     T --> IDX
@@ -86,6 +93,23 @@ flowchart LR
     GA --> LOG
     EV[Stage 3 Eval harness] -. gates .-> KA
     EV -. gates .-> GA
+```
+
+How the discovery itself ran, start to finish:
+
+```mermaid
+sequenceDiagram
+    actor Me as Me (FDE)
+    participant P as Six stakeholders
+    participant D as Discovery notes
+    participant S as Scoring + 4-check test
+    participant C as Client (GM)
+    Me->>P: 45-60 minute sessions (GM, front desk, activities, revenue, IT, a guest)
+    P-->>D: answers, numbers, "what would make you switch it off"
+    Me->>S: six use cases scored on value, feasibility, risk, data readiness
+    S-->>Me: four pass, one "not yet" (concierge), one fail (automatic refunds)
+    Me->>C: SOW, pricing range, security answers, the order of the stages
+    C-->>Me: staff-facing first, read-only before anything that writes
 ```
 
 ## Results
