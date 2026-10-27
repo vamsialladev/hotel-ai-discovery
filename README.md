@@ -42,6 +42,7 @@ that came before any code.**
 | Security questionnaire | Answers to a typical procurement questionnaire | [docs/SECURITY_QUESTIONNAIRE.md](docs/SECURITY_QUESTIONNAIRE.md) |
 | Risk register | Risk, likelihood, impact, owner, mitigation | [docs/RISKS.md](docs/RISKS.md) |
 | Interview walkthrough | How I'd present this in a 60-minute FDE design round | [docs/INTERVIEW_WALKTHROUGH.md](docs/INTERVIEW_WALKTHROUGH.md) |
+| Agent protocols | Which protocol each connection uses, and how I'd choose for a new one | [docs/PROTOCOLS.md](docs/PROTOCOLS.md) |
 | Decisions | Why the pack is built this way | [docs/DECISIONS.md](docs/DECISIONS.md) |
 | This repo's architecture | How the scripts and checks fit together | [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) |
 | Video script | The 75-second walkthrough I record | [docs/VIDEO_SCRIPT.md](docs/VIDEO_SCRIPT.md) |
